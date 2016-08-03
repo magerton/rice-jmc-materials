@@ -1,0 +1,175 @@
+% LaTeX resume using res.cls
+\documentclass[11pt]{res} % default is 10 pt
+
+% -------------------------------------------------------------
+% Preamble
+% -------------------------------------------------------------
+
+% Packages
+\usepackage{tgpagella}              % a different set of fonts
+\usepackage{fancyhdr}               % use this package to get a 2 line header
+\usepackage[hidelinks]{hyperref}    % hyperlinks for email
+
+% Style
+% \setlength{\textheight}{9.5in} % change if you have to move the bottom margin
+\topmargin=-0.5in              % start text higher on the page
+\setlength\parindent{0pt}      % no indents
+\parskip 1pt                   % no skip between paragraphs
+\newsectionwidth{0pt}          % So the text is not indented under section headings
+
+% a way to force indenting...
+\newcommand{\forceindent}{\leavevmode{\parindent=24pt\indent}}
+
+% set header
+\pagestyle{fancy}                   % set pagestyle for document
+\renewcommand{\headrulewidth}{0pt}  % suppress line drawn by default by fancyhdr
+\setlength{\headsep}{24pt}          % space between header and text
+\setlength{\headheight}{40pt}       % allow room for header
+\cfoot{}                            % the foot is empty
+\rhead{\emph{D. Ricardo, \  p. \thepage}} % your name on the right
+
+% Center text in \address{}
+\makeatletter
+\def\@tablebox#1{\begin{tabular}[t]{@{}c@{}}#1\end{tabular}}
+\makeatother
+
+% changing section font
+\renewcommand\sectionfont{\scshape\bfseries\Large}
+
+% -------------------------------------------------------------
+% Document
+% -------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty}
+
+% your name!
+\name{\Large David Ricardo\\[4pt]} % adds a blank line after name
+
+% your contact info
+\address{
+\href{mailto:dricardo@rice.edu}{dricardo@rice.edu} \\
+Department of Economics MS-22 \\
+Rice University, Houston, TX 77251-1892\\
+(713) 348-8411
+}
+
+\begin{resume}
+
+% ----------------------------------------
+\section{Education}
+\vspace{6pt}
+% ----------------------------------------
+
+Ph.D. in Economics, Rice University  \hfill (Anticipated) May 2017 \par
+\forceindent \textsc{Dissertation}: Three Essays in Labor Economics
+
+M.A. in Economics, Rice University  \hfill (Anticipated) May 2017 \par
+
+B.A. in Economics (\emph{Summa cum Laude}), London School of Economics (U.K.)  \hfill    May 2000--03 \par
+
+% ----------------------------------------
+\section{Dissertation Committee}
+\vspace{6pt}
+% ----------------------------------------
+
+\forceindent
+\begin{minipage}[t]{0.5\textwidth}
+%\centering
+Prof. Kenneth Arrow (\textbf{Chair}) \\
+Department of Economics \\
+Rice University \\
+(713) 348-1111\\
+\href{mailto:arrow@rice.edu}{arrow@rice.edu}
+
+\vspace{.4cm}
+
+Prof. Friedrich Hayek \\
+Department of Economics \\
+Rice University \\
+(713) 348-2222\\
+\href{mailto:hayek@rice.edu}{hayek@rice.edu}\\
+\end{minipage}%
+%
+%
+%
+\begin{minipage}[t]{0.5\textwidth}
+Prof. John Hicks \\
+Department of Economics\\
+Rice University \\
+(713) 348-3333 \\
+\href{mailto:hicks@rice.edu}{hicks@rice.edu}\\
+\end{minipage}
+
+
+% ----------------------------------------
+\vspace{-.2cm}
+\section{Research and Teaching Fields}
+\vspace{6pt}
+% ----------------------------------------
+
+Primary: Microeconomics \par
+Secondary: Macroeconomics
+
+% ----------------------------------------
+\vspace{-.2cm}
+\section{Scholarships, Honors, and Awards}
+\vspace{6pt}
+% ----------------------------------------
+
+
+\begin{tabular}{l l}
+ 2014 & Official Sounding Paper Award, Econometrica \\
+&\hspace{.5cm} \emph{``Name of my Paper''} \\
+ 2013 & Outstanding Teaching Assistant Award, Department of Economics, Rice University \\
+ 2012--16 & ABC Foundation Scholarship, AER
+\end{tabular}
+
+% ----------------------------------------
+\section{Publications}
+\vspace{6pt}%
+% ----------------------------------------
+
+Keynes, John M., and P. McCartney [2000]. ``Rising Cost of Yellow Submarines,'' \emph{Journal of Music Economics} 44(2), 337-58.\par
+
+% ----------------------------------------
+\section{Research Papers}
+\vspace{6pt}%
+% ----------------------------------------
+
+\emph{The General Theory of Employment, Interest and Money} \hfill \textbf{Job Market Paper}  \\
+Phasellus nec eleifend arcu. Vivamus vulputate mi non erat consequat venenatis. Ut in suscipit elit. Aliquam tincidunt, risus quis fringilla dignissim, ipsum diam congue enim, eu iaculis sem sapien in nibh. Ut euismod ullamcorper quam quis blandit. Maecenas convallis, elit nec semper vulputate, justo mauris porttitor erat, non aliquam est velit sit amet ex. Cras bibendum felis cursus ligula consectetur posuere. Aenean vitae dignissim massa. Duis sodales felis ex, a lobortis lacus tempus non. Phasellus pretium ipsum non tincidunt egestas. Curabitur nec purus in arcu tempor vestibulum vulputate in erat. Cras vel ornare turpis. \par
+
+\vspace{6pt} % skip a full line
+
+\emph{Notes on the Trade Cycle}      \hfill   \\
+In ac odio at risus accumsan eleifend sed eget nunc. Suspendisse potenti. Integer at ligula efficitur, lobortis magna eget, condimentum purus. Nunc nec velit et ipsum gravida sagittis. Aenean cursus elit et lacus pellentesque, eget varius justo hendrerit. Donec at sapien et ipsum faucibus rutrum quis non ante. Ut facilisis nibh a tellus interdum sodales. Quisque elementum tellus at malesuada aliquet. Phasellus id mi in mauris ullamcorper semper. Sed et augue sed sem sodales mollis nec quis sem. Sed sit amet enim dolor. Vivamus vehicula ipsum vel felis venenatis fringilla. Morbi condimentum orci ipsum, eget interdum ligula volutpat vel. Integer ullamcorper malesuada risus, sed eleifend nulla volutpat et. \par
+
+
+% ----------------------------------------
+\section{Teaching Experience}
+\vspace{6pt}%
+% ----------------------------------------
+
+\textbf{Teaching Assistant} \hfill     September 2012-Present \par
+\forceindent \emph{Rice University}, Houston, TX \par
+\forceindent GRADUATE-LEVEL: Labor Economics\par
+\forceindent UNDERGRADUATE: Labor Economics\par
+
+% ----------------------------------------
+\section{Professional Activities}
+\vspace{6pt}%
+% ----------------------------------------
+
+Referee for Journal of Obligatory Economics, Review of Useless Economics \\
+``Sports in the Age Sports," XXIII Conference on Sport Economics, Olympia, Greece, 2008
+
+% ----------------------------------------
+\section{Skills}
+\vspace{6pt}%
+% ----------------------------------------
+
+C++, Julia
+
+\end{resume}
+\end{document}
