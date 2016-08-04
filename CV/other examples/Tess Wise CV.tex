@@ -1,0 +1,167 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{hanging}
+\usepackage{parskip}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Tess Elizabeth Wise}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.gov.harvard.edu}{Harvard University} \\
+  Department of Government \\
+ 1737 Cambridge St \\
+ Cambridge, MA 02138\\
+ 
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Email: & \href{mailto:wise@fas.harvard.edu}{\tt wise@fas.harvard.edu} \\
+    Homepage: & \href{http://tesswise.com}{\tt http://tesswise.com} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Research Interests}
+\begin{itemize}
+\item I am interested in causal inference, text analysis and experimental political science. Current projects including using Twitter to study collective action in the context of the Occupy movement and using regression discontinuity designs to study the effect of citizenship in Western Europe.
+\end{itemize} 
+
+\section*{Education}
+
+\begin{itemize}
+  \item Ph.D. Candidate, Department of Government, Harvard University 2011 -- current.
+  \item B.S. Political Science, French, Massachusetts Institute of Technology, 2011.
+  \subitem GPA: {\bf 4.9 / 5.0}
+  
+  \leftskip 0.5in
+ \parindent -0.5in
+  \subitem Thesis: \href{http://www.people.fas.harvard.edu/~wise/Undergrad\%20Thesis/}{\emph{How Direct Democracy Affects Local Naturalization Rates: Evidence from Switzerland}}. \\ Winner of the Stephen M. Meyer Outstanding Undergraduate Political Science Thesis Award
+  
+\end{itemize}
+
+\section*{Research}
+\begin{itemize}
+\item {\bf Current Projects}
+
+\leftskip 0.5in
+\parindent -0.5in
+\subitem Research Assistant for IMPALA (The International Migration Policy and Law Analysis Database) under the direction of Michael Hiscox at Harvard University. (2011 -- current)
+\subitem Research Assistant for Ryan Enos at Harvard University (2011 -- current)
+\subitem Research Assistant for Stephen Ansolabehere at Harvard University (2012 -- current)\\
+
+
+\leftskip 0in
+\item {\bf Past Projects}
+
+\leftskip 0.5in
+\parindent -0.5in
+\subitem Research Assistant for Jens Hainmueller at MIT (2009 -- 2011)
+\subitem Research Assistant for the Com\'edie Fran\c caise Registers Project under the direction of Jeffrey Ravel at MIT (2007 -- 2011)
+\end{itemize}
+
+
+
+
+\section*{Skills}
+\begin{itemize}
+\item {\bf Programming}
+\subitem R, STATA, Python
+\item {\bf Methods}
+
+\leftskip 0.5in
+\parindent -0.5in
+
+\subitem MIT Classes: Calculus (I\&II), Differential Equations, Quantitative Research Methods (I\&II), Introduction to Computer Science (Python) 
+\subitem{Harvard Classes: Topics in Quantitative Methods (Gov 2002), Advanced Quantitative Research Methodology (Gov 2001)}
+
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+  \end{footnotesize}
+\end{center}
+
+\end{document}
