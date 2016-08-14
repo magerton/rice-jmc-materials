@@ -37,3 +37,6 @@ There are the following iterations from different people.
     * No underlines, bigger headings, cleaned-up section code
     * Fixed right alignment issue
     * Removed need for `\noindent` and replaced with a need for `\forceindent`
+
+4. [CV Template 2.0.tex](CV Template 2.0.pdf)
+    * Updated with new look after Ioannis Spyridopoulos resume
