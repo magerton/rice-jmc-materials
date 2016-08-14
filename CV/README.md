@@ -4,12 +4,23 @@
     * Conference presentations sub-section?
     * Work experience?
 
+## Version history
 
-## Versions
-There are the following iterations from different people.
-1. [CV Template-rev0.tex](older versions/CV Template-rev0.pdf) and [CV_Template.doc](older versions/CV_Template.doc) are initial drafts
+- [CV Template 2.0.tex](CV Template 2.0.pdf)
+    * Updated with new look after Ioannis Spyridopoulos resume
+    * Moved honors/awards dates to RHS to keep uniform
+    * Made dissertation committee 1 row to save (a bunch of) space
+    * Sub-lists under Professional Activities
+    * Added some space between fields and papers/abstracts
+    * Made itemize work for the resume
 
-2. [CV Template-rev1.tex](older versions/CV Template-rev1.pdf) has the following changes. See the [diff view](older versions/CV Template-rev1.diff.pdf)
+- [CV Template-rev2.tex](older versions/CV Template-rev2.pdf) 
+    * Changed font
+    * No underlines, bigger headings, cleaned-up section code
+    * Fixed right alignment issue
+    * Removed need for `\noindent` and replaced with a need for `\forceindent`
+
+- [CV Template-rev1.tex](older versions/CV Template-rev1.pdf) has the following changes. See the [diff view](older versions/CV Template-rev1.diff.pdf)
     * Not sure why there are two "Research Papers" sections - the second one is removed in the attached.
     * Changed the order of the categories
         * Education 
@@ -29,14 +40,10 @@ There are the following iterations from different people.
         * Set the hyperlink boxes to be hidden (because yuck, right?)
     * Added titles to the conference presentations
     * Made the "Skills" section unitemized. Because a bullet list of "C++" and "Julia" looks like padding. (Apparently this was already obvious because they were both combined into a single bullet point before.)
-    * Added vertical space at the end of the heading so the difference between the heading and the main text would be more clear (only affects the second page). To prevent printing problems with this change, I also made the heading space slightly wide (now only 0.25in smaller than usual, rather than 0.5in).
+    * Added vertical space at the end of the heading so the difference between the heading and the main text would be more clear (only affects the second page). To prevent printing problems with this change, I also made the 
+    * heading space slightly wide (now only 0.25in smaller than usual, rather than 0.5in).
     * If you know how to make the heading actually right adjusted (i.e., ending at the same margin as the rest of the document), that'd be extra awesome.
 
-3. [CV Template-rev2.tex](older versions/CV Template-rev2.pdf) 
-    * Changed font
-    * No underlines, bigger headings, cleaned-up section code
-    * Fixed right alignment issue
-    * Removed need for `\noindent` and replaced with a need for `\forceindent`
 
-4. [CV Template 2.0.tex](CV Template 2.0.pdf)
-    * Updated with new look after Ioannis Spyridopoulos resume
+-
+ [CV Template-rev0.tex](older versions/CV Template-rev0.pdf) and [CV_Template.doc](older versions/CV_Template.doc) are initial drafts
