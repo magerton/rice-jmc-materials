@@ -1,0 +1,235 @@
+% LaTeX resume using res.cls
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL CV Template-rev0.tex   Tue Aug  2 20:58:01 2016
+%DIF ADD CV Template-rev1.tex   Tue Aug  2 20:58:14 2016
+\documentclass{res} % default is 10 pt
+
+% Font
+\usepackage{newcent}   % uses new century schoolbook postscript font 
+%DIF 6c6
+%DIF < \usepackage{hyperref}
+%DIF -------
+\usepackage[hidelinks]{hyperref} %DIF > 
+%DIF -------
+
+% set header
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\pagestyle{fancy}     % set pagestyle for document
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+%\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headheight}{23pt} % allow room for 2-line header
+
+%DIF 15c15
+%DIF < \rhead{ {\it D. Ricardo, \  p. \thepage} } % put text in header (right side)
+%DIF -------
+\rhead{ {\it D. Ricardo, \  p. \thepage}\vspace{0.5cm}} % put text in header (right side) %DIF > 
+%DIF -------
+\cfoot{}                                     % the foot is empty
+
+% Style
+\usepackage{latexsym}   % to get the \Box symbol
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+%DIF 21c21
+%DIF < \topmargin=-0.5in % start text higher on the page
+%DIF -------
+\topmargin=-0.25in % start text higher on the page %DIF > 
+%DIF -------
+\setlength\parindent{24pt}
+\parskip 0pt % no skip between paragraphs
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+
+% Center text in \address{}
+\makeatletter
+\def\@tablebox#1{\begin{tabular}[t]{@{}c@{}}#1\end{tabular}}
+\makeatother
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document} 
+
+\thispagestyle{empty}
+
+\name{\large David Ricardo\\[4pt]} % adds a blank line after name
+
+
+\address{  
+\href{mailto:  dricardo@rice.edu}{ dricardo@rice.edu} \\ 
+Department of Economics MS-22 \\
+Rice University, Houston, TX 77251-1892\\
+(713) 348-8411           
+}
+
+\begin{resume}                         
+
+\section{\scshape \underline{EDUCATION} }  
+\vspace{6pt} 
+\noindent Ph.D. in Economics, Rice University  \hfill (Anticipated) May 2017 \par
+{\scshape DISSERTATION:} Three Essays in Labor Economics
+
+\noindent M.A. in Economics, Rice University  \hfill (Anticipated) May 2017 \par
+
+\noindent B.A. in Economics (\emph{Summa cum Laude}), London School of Economics (U.K.)  \hfill    May 2000--03 \par
+
+\vspace{-.2cm}
+\section{\scshape \DIFdelbegin \underline{\DIFdel{Dissertation Committee}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \underline{\DIFadd{DISSERTATION COMMITTEE}}\DIFaddend }
+\vspace{6pt} 
+\begin{minipage}[t]{0.5\textwidth}
+%\centering
+\noindent Prof. Kenneth Arrow ({\bf Chair}) \\
+Department of Economics \\
+Rice University \\
+(713) 348-1111\\
+\href{mailto:  arrow@rice.edu}{ arrow@rice.edu}
+
+\vspace{.2cm}
+
+Prof. Friedrich Hayek \\
+Department of Economics \\
+Rice University \\
+(713) 348-2222\\
+\href{mailto:  hayek@rice.edu}{hayek@rice.edu}\\
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+  %\centering
+Prof. John Hicks \\
+Department of Economics\\
+Rice University \\
+(713) 348-3333 \\
+\href{mailto:  hicks@rice.edu}{hicks@rice.edu}\\
+\end{minipage}
+
+
+\vspace{-.2cm}
+\section{\scshape \underline{RESEARCH AND TEACHING FIELDS}}
+\vspace{6pt} 
+\noindent Primary: Microeconomics \par
+\noindent Secondary: Macroeconomics
+
+\vspace{-.2cm}
+\DIFdelbegin \section{%DIFDELCMD < \scshape %%%
+\underline{\DIFdel{TEACHING EXPERIENCE}}%DIFAUXCMD
+} 
+%DIFAUXCMD
+\addtocounter{section}{-1}%DIFAUXCMD
+%DIFDELCMD < \vspace{8pt}
+%DIFDELCMD < 
+
+%DIFDELCMD < \noindent %%%
+\textbf{\DIFdel{Teaching Assistant}} %DIFAUXCMD
+%DIFDELCMD < \hfill     %%%
+\DIFdel{September 2012-Present }%DIFDELCMD < \par
+%DIFDELCMD < {\sl %%%
+\DIFdel{Rice University}%DIFDELCMD < }%%%
+\DIFdel{, Houston, TX }%DIFDELCMD < \par
+%DIFDELCMD < %%%
+\DIFdel{GRADUATE-LEVEL: Labor Economics}%DIFDELCMD < \par
+%DIFDELCMD < %%%
+\DIFdel{UNDERGRADUATE: Labor Economics}%DIFDELCMD < \par 
+%DIFDELCMD < 
+
+%DIFDELCMD < \vspace{-.2cm}
+%DIFDELCMD < %%%
+\DIFdelend \section{\scshape \underline{SCHOLARSHIPS, HONORS, AND AWARDS}}
+\vspace{6pt}
+\noindent\begin{tabular}{l l}
+ 2014 & Official Sounding Paper Award, Econometrica \\
+&\hspace{.5cm} \textsl{``Name of my Paper''} \\
+ 2013 & Outstanding Teaching Assistant Award, Department of Economics, Rice University \\
+ 2012--16 & ABC Foundation Scholarship, AER
+\end{tabular}
+
+\DIFdelbegin %DIFDELCMD < \vspace{-.2cm}
+%DIFDELCMD < %%%
+\section{%DIFDELCMD < \scshape %%%
+\underline{\DIFdel{PROFESSIONAL ACTIVITIES}}%DIFAUXCMD
+}
+%DIFAUXCMD
+\addtocounter{section}{-1}%DIFAUXCMD
+%DIFDELCMD < \vspace{6pt}
+%DIFDELCMD <  \noindent %%%
+\DIFdel{Referee for Journal of Obligatory Economics, Review of Useless Economics }%DIFDELCMD < \\
+%DIFDELCMD < \noindent %%%
+\DIFdel{Seminar presenter, XXIII Conference on Sport Economics, Olympia, Greece, 2008 \
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \section{\scshape \underline{PUBLICATIONS}} 
+\vspace{6pt}%
+\noindent \DIFdelbegin \DIFdel{KEYNES, JOHN }\DIFdelend \DIFaddbegin \DIFadd{Keynes, John }\DIFaddend M., \DIFdelbegin \DIFdel{AND P. MCCARTNEY }\DIFdelend \DIFaddbegin \DIFadd{And P. McCartney }\DIFaddend [2000]\DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{. }\DIFaddend “Rising Cost of Yellow Submarines”, \DIFdelbegin \DIFdel{Journal of Music Economics, }\DIFdelend \DIFaddbegin \emph{\DIFadd{Journal of Music Economics}} \DIFaddend 44(2), 337-58.\par
+
+\vspace{-.2cm}
+\section{\scshape \underline{RESEARCH PAPERS}} 
+\vspace{6pt}
+
+\noindent \emph{The General Theory of Employment, Interest and Money  }\hfill {\bf Job Market Paper}  \\
+Phasellus nec eleifend arcu. Vivamus vulputate mi non erat consequat venenatis. Ut in suscipit elit. Aliquam tincidunt, risus quis fringilla dignissim, ipsum diam congue enim, eu iaculis sem sapien in nibh. Ut euismod ullamcorper quam quis blandit. Maecenas convallis, elit nec semper vulputate, justo mauris porttitor erat, non aliquam est velit sit amet ex. Cras bibendum felis cursus ligula consectetur posuere. Aenean vitae dignissim massa. Duis sodales felis ex, a lobortis lacus tempus non. Phasellus pretium ipsum non tincidunt egestas. Curabitur nec purus in arcu tempor vestibulum vulputate in erat. Cras vel ornare turpis. \par
+
+\vspace{6pt} % skip a full line
+
+\noindent \emph{Notes on the Trade Cycle}      \hfill   \\
+In ac odio at risus accumsan eleifend sed eget nunc. Suspendisse potenti. Integer at ligula efficitur, lobortis magna eget, condimentum purus. Nunc nec velit et ipsum gravida sagittis. Aenean cursus elit et lacus pellentesque, eget varius justo hendrerit. Donec at sapien et ipsum faucibus rutrum quis non ante. Ut facilisis nibh a tellus interdum sodales. Quisque elementum tellus at malesuada aliquet. Phasellus id mi in mauris ullamcorper semper. Sed et augue sed sem sodales mollis nec quis sem. Sed sit amet enim dolor. Vivamus vehicula ipsum vel felis venenatis fringilla. Morbi condimentum orci ipsum, eget interdum ligula volutpat vel. Integer ullamcorper malesuada risus, sed eleifend nulla volutpat et.
+\vspace{10pt} % skip a full line
+
+\vspace{-.2cm}
+\section{\scshape \DIFdelbegin \underline{\DIFdel{RESEARCH PAPERS}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \underline{\DIFadd{TEACHING EXPERIENCE}}\DIFaddend } 
+\DIFdelbegin %DIFDELCMD < \vspace{6pt}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \vspace{8pt}
+\DIFaddend 
+
+\noindent \DIFdelbegin \emph{\DIFdel{World Economy and British Solace (with P. Samuelson)  }}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \textbf{\DIFadd{Teaching Assistant}} \DIFaddend \hfill     \DIFaddbegin \DIFadd{September 2012-Present }\par
+{\sl \DIFadd{Rice University}}\DIFadd{, Houston, TX }\par
+\DIFadd{GRADUATE-LEVEL: Labor Economics}\par
+\DIFadd{UNDERGRADUATE: Labor Economics}\par 
+
+\vspace{-.2cm}
+\section{\scshape \underline{\DIFadd{PROFESSIONAL ACTIVITIES}}}
+\vspace{6pt}
+\noindent \DIFadd{Referee for Journal of Obligatory Economics, Review of Useless Economics }\DIFaddend \\
+\noindent \DIFdelbegin \emph{\DIFdel{Obladi-Oblada (with R. Starr)  }}%DIFAUXCMD
+%DIFDELCMD < \hfill
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{``Sports in the Age Sports," XXIII Conference on Sport Economics, Olympia, Greece, 2008 \
+}\DIFaddend 
+
+\vspace{0.15in} 
+\section{\scshape \DIFdelbegin \underline{\DIFdel{SKILLS}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \underline{\DIFadd{SKILLS}}\DIFaddend }
+\vspace{6pt} 
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < \begin{itemize} \itemsep %%%
+\DIFdel{-2pt
+  }%DIFDELCMD < \item[-]  %%%
+\DIFdelend C++, Julia
+\DIFdelbegin %DIFDELCMD < \end{itemize} \vspace{-6pt}  
+%DIFDELCMD < %%%
+\DIFdelend 
+
+\end{resume}
+\end{document}
