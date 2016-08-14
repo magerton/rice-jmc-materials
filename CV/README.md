@@ -38,5 +38,5 @@ There are the following iterations from different people.
     * Fixed right alignment issue
     * Removed need for `\noindent` and replaced with a need for `\forceindent`
 
-4. [CV Template 2.0.tex](older versions/CV Template 2.0.pdf)
+4. [CV Template 2.0.tex](CV Template 2.0.pdf)
     * Updated with new look after Ioannis Spyridopoulos resume
