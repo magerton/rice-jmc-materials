@@ -15,6 +15,8 @@
 \usepackage{tabularx}                % to get tables to fill width
 % \usepackage{showframe}               % uncomment to see margins
 \usepackage{xcolor}                  % to define the Rice Univ blue
+\usepackage{enumitem}
+
 \usepackage{hyperref}                % links for email + web
 
 % ---------------------------------------------------------
@@ -33,7 +35,7 @@
 % fix spacing after section titles
 \titlespacing{\section}                      % command
     {0pc}                                    % left space
-    {-2ex plus .1ex minus .1ex}              % before space
+    {-3ex plus .1ex minus .1ex}              % before space
     {0pc}                                    % after space
     [0pc]                                    % right space
 
@@ -43,6 +45,17 @@
   left=1.0in,
   top=1.0in
 }
+
+% formatting for all itemize
+\setlist[itemize]{ 
+        leftmargin=0.0em, 
+        itemsep=0.0em, 
+        topsep=0em, 
+        label={},
+        parsep=0.5em}
+
+% formatting for second level of itemize
+\setlist[itemize,2]{leftmargin=2.0em, itemsep=-0.1em}
 
 % -------------- format header & footer ------------
 
@@ -138,13 +151,14 @@ Rice University, Houston, TX 77251-1892}
 \section{Education}
 % ----------------------------------------
 
-Ph.D. in Economics, Rice University  \hfill (Anticipated) May 2017  \\
-\forceindent \textsc{Dissertation}: Three Essays in Labor Economics 
+\begin{itemize}
+    \item Ph.D. in Economics, Rice University  \hfill (Anticipated) May 2017  \\
+    \forceindent \textsc{Dissertation}: Three Essays in Labor Economics 
 
-M.A. in Economics, Rice University  \hfill (Anticipated) May 2017 
+    \item M.A. in Economics, Rice University  \hfill (Anticipated) May 2017 
 
-B.A. in Economics (\emph{Summa cum Laude}), London School of Economics (U.K.)  \hfill    May 2000--03 
-
+    \item B.A. in Economics (\emph{Summa cum Laude}), London School of Economics (U.K.)  \hfill    May 2000--03 
+\end{itemize}
 
 % ----------------------------------------
 \section{Dissertation Committee}
@@ -164,74 +178,109 @@ Rice University                      & Rice University         & Rice University
 \section{Research and Teaching Fields}
 % ----------------------------------------
 
-Primary: Microeconomics 
-
-Secondary: Macroeconomics
+\begin{itemize}
+    \item Primary: Microeconomics 
+    \item Secondary: Macroeconomics 
+\end{itemize}
 
 
 % ----------------------------------------
 \section{Scholarships, Honors, and Awards}
 % ----------------------------------------
 
-\begin{tabular}{@{}l l@{}}
- 2014     & Official Sounding Paper Award, Econometrica \\
-          & \hspace{.5cm} \emph{``Name of my Paper''}   \\
- 2013     & Outstanding Teaching Assistant Award, Department of Economics, Rice University \\
- 2012--16 & ABC Foundation Scholarship, AER
-\end{tabular}
+\begin{itemize}
+    \item Official Sounding Paper Award, Econometrica \hfill 2014 \\
+    \emph{``Name of my Paper''}
+    
+    \item Outstanding Teaching Assistant Award, Department of Economics, Rice University \hfill 2013
+
+    \item ABC Foundation Scholarship, AER \hfill 2012--2016
+\end{itemize}
+
 
 
 % ----------------------------------------
 \section{Publications}
 % ----------------------------------------
 
-Keynes, John M., and P. McCartney [2000]. ``Rising Cost of Yellow Submarines,'' \emph{Journal of Music Economics} 44(2), 337-58.
-
-
-% ----------------------------------------
-\section{Presentations and Conferences} 
-% ----------------------------------------
-
-Financial Management Association (Orlando, Florida) \hfill October 2015 
+\begin{itemize}
+    \item Keynes, John M., and P. McCartney [2000]. ``Rising Cost of Yellow Submarines,'' \emph{Journal of Music Economics} 44(2), 337-58.
+\end{itemize}
 
 
 % ----------------------------------------
 \section{Research Papers}
 % ----------------------------------------
 
-\emph{The General Theory of Employment, Interest and Money} \hfill \textbf{Job Market Paper}  \\
+\begin{itemize}[itemsep=1.5em]
+
+\item \emph{The General Theory of Employment, Interest and Money} \hfill \textbf{Job Market Paper}
+
 Phasellus nec eleifend arcu. Vivamus vulputate mi non erat consequat venenatis. Ut in suscipit elit. Aliquam tincidunt, risus quis fringilla dignissim, ipsum diam congue enim, eu iaculis sem sapien in nibh. Ut euismod ullamcorper quam quis blandit. Maecenas convallis, elit nec semper vulputate, justo mauris porttitor erat, non aliquam est velit sit amet ex. Cras bibendum felis cursus ligula consectetur posuere. Aenean vitae dignissim massa. Duis sodales felis ex, a lobortis lacus tempus non. Phasellus pretium ipsum non tincidunt egestas. Curabitur nec purus in arcu tempor vestibulum vulputate in erat. Cras vel ornare turpis. 
 
-\vspace{6pt} % skip a full line
+\item \emph{Notes on the Trade Cycle} 
 
-\emph{Notes on the Trade Cycle}      \hfill   \\
 In ac odio at risus accumsan eleifend sed eget nunc. Suspendisse potenti. Integer at ligula efficitur, lobortis magna eget, condimentum purus. Nunc nec velit et ipsum gravida sagittis. Aenean cursus elit et lacus pellentesque, eget varius justo hendrerit. Donec at sapien et ipsum faucibus rutrum quis non ante. Ut facilisis nibh a tellus interdum sodales. Quisque elementum tellus at malesuada aliquet. Phasellus id mi in mauris ullamcorper semper. Sed et augue sed sem sodales mollis nec quis sem. Sed sit amet enim dolor. Vivamus vehicula ipsum vel felis venenatis fringilla. Morbi condimentum orci ipsum, eget interdum ligula volutpat vel. Integer ullamcorper malesuada risus, sed eleifend nulla volutpat et. 
+
+\end{itemize}
+
+
 
 
 % ----------------------------------------
 \section{Teaching Experience}
 % ----------------------------------------
 
-\textbf{Teaching Assistant} \hfill     September 2012-Present \\
-\forceindent \emph{Rice University}, Houston, TX              \\
-\forceindent GRADUATE-LEVEL: Labor Economics                  \\
-\forceindent UNDERGRADUATE: Labor Economics
+\begin{itemize}
+    
+    \item \textbf{Teaching Assistant}, Rice University 
+    \begin{itemize}
+        \item Graduate: Labor Economics \hfill Fall 2012-Present 
+        \item Undergraduate: Labor Economics \hfill Fall 2010-Fall 2012
+    \end{itemize}
+    
+    \item \textbf{Instructor}, Rice University
+    \begin{itemize}
+        \item Undergradeuate: ``econ 4 dummies: a primer''  \hfill Fall 2013
+    \end{itemize}
+
+\end{itemize}
 
 
 % ----------------------------------------
 \section{Professional Activities}
 % ----------------------------------------
 
-Referee for Journal of Obligatory Economics, Review of Useless Economics \\
-``Sports in the Age Sports," XXIII Conference on Sport Economics, Olympia, Greece, 2008
+\begin{itemize}
 
+    \item \textbf{Conferences}
+    \begin{itemize}
+        \item ``Sports in the Age Sports," XXIII Conference on Sport Economics, Olympia, Greece \hfill 2008
+        \item ``Sports in the Age Sports," XXIV Conference on Sport Economics, Olympia, Greece \hfill 2009
+    \end{itemize}
+
+    \item \textbf{Referee for} Journal of Obligatory Economics, Review of Useless Economics
+    
+    \item \textbf{Association of Useless Facts}
+    \begin{itemize}
+        \item President, Rice Univ Chapter \hfill 2010--2012
+        \item Student representative, National chapter \hfill 2013
+    \end{itemize}
+    
+    \item \textbf{Invited presentations}
+    \begin{itemize}
+        \item Luna University, The moon, ``Economics of space travel'' \hfill Sept 2013
+        \item Extraterrestris institute, Alpha Centauri, ``Are we really all dead in the long run?'' \hfill Jan 2101
+    \end{itemize}
+    
+\end{itemize}
 
 % ----------------------------------------
 \section{Skills}
 % ----------------------------------------
 
-C++, Julia
-
-
+\begin{itemize}
+    \item C++, Julia
+\end{itemize}
 
 \end{document}
