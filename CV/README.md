@@ -44,6 +44,4 @@
     * heading space slightly wide (now only 0.25in smaller than usual, rather than 0.5in).
     * If you know how to make the heading actually right adjusted (i.e., ending at the same margin as the rest of the document), that'd be extra awesome.
 
-
--
- [CV Template-rev0.tex](older versions/CV Template-rev0.pdf) and [CV_Template.doc](older versions/CV_Template.doc) are initial drafts
+- [CV Template-rev0.tex](older versions/CV Template-rev0.pdf) and [CV_Template.doc](older versions/CV_Template.doc) are initial drafts
