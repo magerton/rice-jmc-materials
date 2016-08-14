@@ -48,14 +48,18 @@
 
 % formatting for all itemize
 \setlist[itemize]{ 
-        leftmargin=0.0em, 
-        itemsep=0.0em, 
-        topsep=0em, 
-        label={},
-        parsep=0.5em}
+        leftmargin  = 0.0em, 
+        itemsep     = 0.0em, 
+        topsep      = 0.0em,
+        label       = {},
+        parsep      = 0.5em
+}
 
 % formatting for second level of itemize
-\setlist[itemize,2]{leftmargin=2.0em, itemsep=-0.1em}
+\setlist[itemize,2]{
+        leftmargin  = 2.0em, 
+        itemsep     = -.35em
+}
 
 % -------------- format header & footer ------------
 
@@ -71,16 +75,13 @@
 % your name on the right
 \rhead{\emph{\myshortname, \  p. \thepage}}
 
-% ---------- Margins and formatting ------------
+% ---------- Margins and other formatting ------------
 
 % space b/w paragraphs
 \setlength{\parskip}{1.1ex}
 
 % default to no indents
 \setlength\parindent{0pt}
-
-% macro to force indent of a line
-\newcommand{\forceindent}{\leavevmode{\parindent=24pt\indent}}
 
 % format for date at the end
 \newdateformat{mydate}{\monthname[\THEMONTH] \THEDAY, \THEYEAR}
@@ -94,6 +95,8 @@
 % macro for email
 \newcommand{\email}[1]{\href{mailto:#1}{#1}}
 
+% macro to force indent of a line
+\newcommand{\forceindent}{\leavevmode{\parindent=24pt\indent}}
 
 % ---------------------------------------------------------
 % -----------         YOUR INFORMATION          -----------
@@ -157,7 +160,7 @@ Rice University, Houston, TX 77251-1892}
 
     \item M.A. in Economics, Rice University  \hfill (Anticipated) May 2017 
 
-    \item B.A. in Economics (\emph{Summa cum Laude}), London School of Economics (U.K.)  \hfill    May 2000--03 
+    \item B.A. in Economics (\emph{Summa cum Laude}), London School of Economics \hfill May 2000--03 
 \end{itemize}
 
 % ----------------------------------------
@@ -231,7 +234,7 @@ In ac odio at risus accumsan eleifend sed eget nunc. Suspendisse potenti. Intege
 \section{Teaching Experience}
 % ----------------------------------------
 
-\begin{itemize}[itemsep=1em]
+\begin{itemize}[itemsep=0.5em]
     
     \item \textbf{Teaching Assistant}, Rice University 
     \begin{itemize}
@@ -251,7 +254,7 @@ In ac odio at risus accumsan eleifend sed eget nunc. Suspendisse potenti. Intege
 \section{Professional Activities}
 % ----------------------------------------
 
-\begin{itemize}[itemsep=1em]
+\begin{itemize}[itemsep=0.5em]
 
     \item \textbf{Conferences}
     \begin{itemize}
