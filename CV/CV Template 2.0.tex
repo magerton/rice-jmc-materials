@@ -1,16 +1,18 @@
 \documentclass{article}[12]
 
 % CREDIT TO Ioannis Spyridopoulos, Nick Frazier, Margaret McKeehan,
-%             and Mark Agerton at Rice University for template
-%           Also, to Jason Blevins <jrblevin@sdf.lonestar.org> for template
-%             http://jblevins.org/projects/cv-template/
+%           and Mark Agerton at Rice University for template.
+%           Also, to Jason Blevins <jrblevin@sdf.lonestar.org> for 
+%           initial template at 
+%               http://jblevins.org/projects/cv-template/
+% THANKS TO Jacquie Frazier for helpful suggestions
 
 % ---------- Packages ------------
 
 \usepackage{geometry}                % for margins
 \usepackage{tgpagella}               % font 
 \usepackage{titlesec}                % format section titles
-\usepackage{multicol}
+\usepackage{pbox}                    % boxes for diss. committee
 \usepackage{fancyhdr}                % header + footer
 \usepackage[yyyymmdd]{datetime}      % for date format at end
 \usepackage{tabularx}                % to get tables to fill width
@@ -107,7 +109,7 @@
 \newcommand{\myshortname}{D. Ricardo}
 \newcommand{\myemail}{dricardo@rice.edu}
 \newcommand{\mywebsite}{http://www.my-great-website.com}
-\newcommand{\mywebsiteNoWww}{www.my-great-website.com}
+\newcommand{\mywebsiteNoHttp}{www.my-great-website.com}
 \newcommand{\myphone}{(713) 348-8411}
 \newcommand{\myaddress}{
 Dept. of Economics MS-22 \\ 
@@ -145,15 +147,16 @@ Houston, TX 77251}
 % suppress header + footer on p. 1
 \thispagestyle{empty}
 
-% Name + contact info
+% Name
 \begin{center}
-{ \bfseries\Large\scshape \myname}   \\[4pt]
+{ \bfseries\huge\scshape \myname}
 \end{center}
 
+% Contact info
 \begin{minipage}[t]{0.48\textwidth}
-    \href{\mywebsite}{\mywebsiteNoWww} \\
+    \href{\mywebsite}{\mywebsiteNoHttp} \\
     \email{\myemail}  \\ 
-    \myphone \\ 
+    \myphone 
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
@@ -162,8 +165,6 @@ Houston, TX 77251}
     \end{flushright}
 \end{minipage}
 
-
-\vspace{-0.5cm} 
 
 % ----------------------------------------
 \section{Education}
@@ -182,41 +183,34 @@ Houston, TX 77251}
 \section{Dissertation Committee}
 % ----------------------------------------
  
-% ---------------------------------------------
-% NOTE: IN THIS SECTION, YOU WILL NEED TO MODIFY 
-% THE 0.###\TEXTWIDTH depending on the length of
-% your committees' names in order to get the spacing
-% to look good.
-% ---------------------------------------------
 
-
-\begin{minipage}[t]{0.280\textwidth}
+\pbox{0.33\textwidth}{
 Prof. Kenneth Arrow (\textbf{Chair}) \\
 Department of Economics \\
 Rice University \\
 (713) 348-1111\\
 \href{mailto:arrow@rice.edu}{arrow@rice.edu}
-\end{minipage} %
+} %
 %
 \hfill
 %
-\begin{minipage}[t]{0.255\textwidth}
+\pbox{0.33\textwidth}{
 Prof. Friedrich Hayek \\
 Department of Economics \\
 Rice University \\
 (713) 348-2222\\
 \href{mailto:hayek@rice.edu}{hayek@rice.edu}
-\end{minipage}%
+}%
 %
 \hfill
 %
-\begin{minipage}[t]{0.255\textwidth}
+\pbox{0.33\textwidth}{
 Prof. John Hicks \\
 Department of Economics\\
 Rice University \\
 (713) 348-3333 \\
 \href{mailto:hicks@rice.edu}{hicks@rice.edu}
-\end{minipage}
+}
 
 
 % ----------------------------------------
