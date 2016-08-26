@@ -10,6 +10,7 @@
 \usepackage{geometry}                % for margins
 \usepackage{tgpagella}               % font 
 \usepackage{titlesec}                % format section titles
+\usepackage{multicol}
 \usepackage{fancyhdr}                % header + footer
 \usepackage[yyyymmdd]{datetime}      % for date format at end
 \usepackage{tabularx}                % to get tables to fill width
@@ -30,7 +31,7 @@
     {}                                       % label
     {0ex}                                    % sep
     {}                                       % before
-    [\vspace{-2ex}\rule{\textwidth}{0.3pt}]  % after-code
+    [\vspace{-2.8ex}\rule{\textwidth}{0.3pt}]  % after-code
 
 % fix spacing after section titles
 \titlespacing{\section}                      % command
@@ -106,9 +107,12 @@
 \newcommand{\myshortname}{D. Ricardo}
 \newcommand{\myemail}{dricardo@rice.edu}
 \newcommand{\mywebsite}{http://www.my-great-website.com}
+\newcommand{\mywebsiteNoWww}{www.my-great-website.com}
 \newcommand{\myphone}{(713) 348-8411}
-\newcommand{\myaddress}{Department of Economics MS-22 \\ 
-Rice University, Houston, TX 77251-1892}
+\newcommand{\myaddress}{
+Dept. of Economics MS-22 \\ 
+Rice University \\ 
+Houston, TX 77251}
 \newcommand{\mykeywords}{economics, econometrics, macroeconomics}
 
 
@@ -143,12 +147,23 @@ Rice University, Houston, TX 77251-1892}
 
 % Name + contact info
 \begin{center}
-{\bfseries\Large\scshape \myname} \\[4pt]
-\email{\myemail} \\ \url{\mywebsite} \\ \myaddress \\ \myphone
+{ \bfseries\Large\scshape \myname}   \\[4pt]
 \end{center}
- 
-\vspace{-0.5cm} 
 
+\begin{minipage}[t]{0.48\textwidth}
+    \href{\mywebsite}{\mywebsiteNoWww} \\
+    \email{\myemail}  \\ 
+    \myphone \\ 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{flushright}
+    \myaddress
+    \end{flushright}
+\end{minipage}
+
+
+\vspace{-0.5cm} 
 
 % ----------------------------------------
 \section{Education}
@@ -166,15 +181,42 @@ Rice University, Houston, TX 77251-1892}
 % ----------------------------------------
 \section{Dissertation Committee}
 % ----------------------------------------
+ 
+% ---------------------------------------------
+% NOTE: IN THIS SECTION, YOU WILL NEED TO MODIFY 
+% THE 0.###\TEXTWIDTH depending on the length of
+% your committees' names in order to get the spacing
+% to look good.
+% ---------------------------------------------
 
-% note: @{} removes indents at left & right
-\begin{tabularx}{\textwidth}{@{}XXX@{}}
-Prof. Kenneth Arrow (\textbf{Chair}) & Prof. Friedrich Hayek   & Prof. John Hicks        \\
-Department of Economics              & Department of Economics & Department of Economics \\
-Rice University                      & Rice University         & Rice University         \\
-(713) 348-1111                       & (713) 348-2222          & (713) 348-3333          \\
-\email{arrow@rice.edu}               & \email{hayek@rice.edu}  & \email{hicks@rice.edu}
-\end{tabularx}
+
+\begin{minipage}[t]{0.280\textwidth}
+Prof. Kenneth Arrow (\textbf{Chair}) \\
+Department of Economics \\
+Rice University \\
+(713) 348-1111\\
+\href{mailto:arrow@rice.edu}{arrow@rice.edu}
+\end{minipage} %
+%
+\hfill
+%
+\begin{minipage}[t]{0.255\textwidth}
+Prof. Friedrich Hayek \\
+Department of Economics \\
+Rice University \\
+(713) 348-2222\\
+\href{mailto:hayek@rice.edu}{hayek@rice.edu}
+\end{minipage}%
+%
+\hfill
+%
+\begin{minipage}[t]{0.255\textwidth}
+Prof. John Hicks \\
+Department of Economics\\
+Rice University \\
+(713) 348-3333 \\
+\href{mailto:hicks@rice.edu}{hicks@rice.edu}
+\end{minipage}
 
 
 % ----------------------------------------
