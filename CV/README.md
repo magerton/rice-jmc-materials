@@ -1,12 +1,36 @@
-# CV Templates
+# CV-Templates
+
+## Thanks to
+
+Thanks to Ioannis Spyridopoulos, @npfrazier, Margaret McKeehan, and @magerton at Rice University for contributions to template.
+
+Original template from Jason Blevins <http://jblevins.org/projects/cv-template/>
+
+Thanks to Jacquie Frazier for helpful suggestions
 
 ## For consideration...
-    * Conference presentations sub-section?
-    * Work experience?
+
+- Conference presentations sub-section?
+- Work experience?
 
 ## Version history
 
-- [CV Template 2.0.tex](CV Template 2.0.pdf)
+- [CV-Template-2.2.tex](CV-Template-2.2.pdf)
+    * Fix `\section` spacing so that sections on new pages don't have extra space on top
+    * Add underlining possibilities with `soul` package
+    * Separated Research and Teaching sections
+    * Add scholarship, honors, awards section
+    * Add other writing and media section
+    * Updated date using `fancyhdr` package
+    * Move style info to [CV-preamble.tex](CV-preamble.tex)
+
+- [CV-Template-2.1.tex](older-versions/CV-Template-2.1.pdf)
+    * Use regular LaTeX font, not tgpagella
+    * Update spacing on section titles
+    * Updated date only on last page
+    * Show 1 vs 2 row dissertation commmittee
+
+- [CV-Template-2.0.tex](older-versions/CV-Template-2.0.pdf)
     * Updated with new look after Ioannis Spyridopoulos resume
     * Moved honors/awards dates to RHS to keep uniform
     * Made dissertation committee 1 row to save (a bunch of) space
@@ -14,13 +38,13 @@
     * Added some space between fields and papers/abstracts
     * Made itemize work for the resume
 
-- [CV Template-rev2.tex](older versions/CV Template-rev2.pdf) 
+- [CV-Template-rev2.tex](older-versions/CV-Template-rev2.pdf) 
     * Changed font
     * No underlines, bigger headings, cleaned-up section code
     * Fixed right alignment issue
     * Removed need for `\noindent` and replaced with a need for `\forceindent`
 
-- [CV Template-rev1.tex](older versions/CV Template-rev1.pdf) has the following changes. See the [diff view](older versions/CV Template-rev1.diff.pdf)
+- [CV-Template-rev1.tex](older-versions/CV-Template-rev1.pdf) has the following changes. See the [diff view](older-versions/CV-Template-rev1.diff.pdf)
     * Not sure why there are two "Research Papers" sections - the second one is removed in the attached.
     * Changed the order of the categories
         * Education 
@@ -44,4 +68,6 @@
     * heading space slightly wide (now only 0.25in smaller than usual, rather than 0.5in).
     * If you know how to make the heading actually right adjusted (i.e., ending at the same margin as the rest of the document), that'd be extra awesome.
 
-- [CV Template-rev0.tex](older versions/CV Template-rev0.pdf) and [CV_Template.doc](older versions/CV_Template.doc) are initial drafts
+- [CV-Template-rev0.tex](older-versions/CV-Template-rev0.pdf) and [CV_Template.doc](older-versions/CV_Template.doc) are initial drafts
+
+
