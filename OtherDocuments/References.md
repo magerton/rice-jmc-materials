@@ -22,7 +22,7 @@ Placement Coordinator
 Department of Economics MS-22  
 Rice University  
 P.O. Box 1892  
-\href{mailto:Kimesha.Webb@rice.edu?subject=David Ricardo Recommendation Letters}{Kimesha.Webb@rice.edu}  
+[Kimesha.Webb@rice.edu](mailto:Kimesha.Webb@rice.edu?subject=David Ricardo Recommendation Letters)  
 (713) 348-4875  
 
 \vspace{5ex}

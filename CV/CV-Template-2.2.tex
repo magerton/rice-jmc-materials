@@ -7,100 +7,12 @@
 %               http://jblevins.org/projects/cv-template/
 % THANKS TO Jacquie Frazier for helpful suggestions
 
-% ---------- Packages ------------
 
-\usepackage{geometry}                % for margins
-%\usepackage{tgpagella}               % font 
-\usepackage{titlesec}                % format section titles
-\usepackage{pbox}                    % boxes for diss. committee
-\usepackage{fancyhdr}                % header + footer
-\usepackage[yyyymmdd]{datetime}      % for date format at end
-\usepackage{tabularx}                % to get tables to fill width
-% \usepackage{showframe}               % uncomment to see margins
-\usepackage{xcolor}                  % to define the Rice Univ blue
-\usepackage{enumitem}                % Customize itemize environments
-\usepackage{soul}                    % Allows underlining
 
-\usepackage{hyperref}                % links for email + web
+% Preamble has all of the relevant formatting info
+\input{CV-preamble}
 
-% ---------------------------------------------------------
-% ----------             FORMATTING            ------------
-% ---------------------------------------------------------
 
-% format of section heading
-% see http://www.ctex.org/documents/packages/layout/titlesec.pdf
-\titleformat{\section}                       % command
-    [display]                                % shape
-    {\Large\scshape}                         % format
-    {}                                       % label
-    {0ex}                                    % sep
-    {\vspace{-4.0ex plus .2ex minus .2ex}}   % code preceding the title body
-    [\vspace{-2.8ex}\rule{\textwidth}{0.3pt}\vspace{-1.5ex}]  % code following the title body
-
-% margins
-\geometry{
-  body={6.5in, 9.0in},                       % adjust right + bottom here
-  left=1.0in,
-  top=1.0in
-}
-
-% formatting for all itemize
-\setlist[itemize]{ 
-        leftmargin  = 0.0em, 
-        itemsep     = 0.0em, 
-        topsep      = 0.0em,
-        label       = {},
-        parsep      = 0.5em
-}
-
-% formatting for second level of itemize
-\setlist[itemize,2]{
-        leftmargin  = 2.0em, 
-        itemsep     = 0.0em
-}
-
-% -------------- format header & footer ------------
-
-% get header + footer 
-\pagestyle{fancy}
-
-% suppress line drawn by default by fancyhdr
-\renewcommand{\headrulewidth}{0pt}
-
-% shows date compiled
-% \cfoot{(Updated: \mydate\today)}
-\cfoot{}
-
-% your name on the right
-\rhead{\emph{\myshortname, \  p. \thepage}}
-\lhead{}
-
-\fancypagestyle{laststyle}{
-   \fancyfoot[C]{(Updated \mydate\today)}
-}
-
-% ---------- Margins and other formatting ------------
-
-% space b/w paragraphs
-\setlength{\parskip}{1.1ex}
-
-% default to no indents
-\setlength\parindent{0pt}
-
-% format for date at the end
-\newdateformat{mydate}{\monthname[\THEMONTH] \THEDAY, \THEYEAR}
-
-% The Rice Univ Blue
-\definecolor{RiceBlue}{RGB}{0,82,147}
-
-% so that URLs are not monospace
-\urlstyle{same}
-
-% macro for email
-\newcommand{\email}[1]{\href{mailto:#1}{#1}}
-
-% macro to force indent of a line
-\newcommand{\forceindent}{\leavevmode{\parindent=24pt\indent}}
 
 % ---------------------------------------------------------
 % -----------         YOUR INFORMATION          -----------
@@ -117,7 +29,6 @@ Dept. of Economics MS-22 \\
 Rice University \\ 
 Houston, TX 77251}
 \newcommand{\mykeywords}{economics, econometrics, macroeconomics}
-
 
 % ---------------------------------------------------------
 % -----------    URL COLOR + PDF METADATA       -----------
@@ -137,6 +48,7 @@ Houston, TX 77251}
             pdftitle    = {\myname: Curriculum Vitae},
             pdfpagemode = UseNone,
 }
+
 
 % ---------------------------------------------------------
 % ----------              RESUME               ------------
@@ -353,6 +265,13 @@ Microeconomics, macroeconomics
 
 \begin{itemize}[itemsep=0.5em]
     \item Quoted on Planet Money, ``\href{https://www.marketplace.org/2017/05/26}{Will work for money: A conversation with David Ricardo}'' (May 26, 2017)
+
+    \item Rice University Center for Energy Studies Blog on Forbes.com
+        \begin{itemize}
+            \item \href{https://www.forbes.com/sites/thebakersinstitute/2017/05/10/the-cycle-not-automation-is-keeping-oil-gas-hiring-down}{``The Cycle, Not Automation, Is Keeping Oil \& Gas Hiring Down''} (May 10, 2017)
+            \item \href{https://www.forbes.com/sites/thebakersinstitute/2015/04/27/oil-price-exchange-rates-and-the-convoluted-impact-of-sanctions-on-russia}{``Oil Price, Exchange Rates, and the Convoluted Impact of Sanctions on Russia''} (April 27, 2015)
+        \end{itemize}
+
 \end{itemize}
 
 % ----------------------------------------

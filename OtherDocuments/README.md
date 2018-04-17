@@ -1,8 +1,14 @@
 # Overview
 
-Use [Pandoc](https://pandoc.org/) to compile these documents, which are written in Markdown.
+Use [Pandoc](https://pandoc.org/) to compile these documents, which are written in Markdown. For example:
+```bash
+pandoc -m ResearchStatement.md -o ResearchStatement.pdf
+```
 
-The cover letter must be compiled with [coverletter-template.tex](coverletter-template.tex) in the same folder and the flag `--template=template-letterarticle.tex`
+The cover letter must be compiled with [CoverLetter-template.tex](CoverLetter-template.tex) in the same folder and the flag `--template=CoverLetter-template.tex`. For example:
+```bash
+pandoc --template=CoverLetter-template.tex -m CoverLetter.md -o CoverLetter.pdf
+```
 
 # Using Sublime Text 3 for editing + compiling
 
