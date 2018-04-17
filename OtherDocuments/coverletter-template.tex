@@ -1,0 +1,79 @@
+\documentclass[$fontsize$, letterpaper]{article}
+
+% LAYOUT
+%--------------------------------
+\usepackage{geometry}
+\geometry{$geometry$}
+
+% No page numbers
+\pagenumbering{gobble}
+
+% Left align
+\usepackage[document]{ragged2e}
+
+\usepackage[protrusion=true,final]{microtype}
+
+
+\usepackage{pdfpages}
+
+% Set paragraph break
+\setlength{\parskip}{1em}
+
+% PDF SETUP
+%--------------------------------
+\usepackage{xcolor}
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref}
+\definecolor{RiceBlue}{RGB}{0,82,147}
+\hypersetup
+{
+  pdfauthor={$author$},
+  colorlinks,
+  breaklinks,
+  filecolor=black,
+  urlcolor=RiceBlue,
+  linkcolor=RiceBlue,
+  linkcolor=RiceBlue,
+  citecolor=RiceBlue
+}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\href{http://$website$}{$website$}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+\small
+\begin{center}
+{\Large \textsc{$author$}} \\
+\end{center}
+
+$for(from)$
+$from$ \\
+$endfor$
+
+\vspace{1em}
+
+$for(to)$
+$to$ \\
+$endfor$
+
+\vspace{1em}
+
+$if(customdate)$\DTMusedate{customdate}$else$\today$endif$
+
+\vspace{1em}
+
+Dear $toname$,
+
+$if(position)$I write to apply for your open $position$.$endif$
+
+$body$
+
+\end{document}

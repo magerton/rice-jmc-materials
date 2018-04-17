@@ -1,0 +1,374 @@
+\documentclass{article}[12]
+
+% CREDIT TO Ioannis Spyridopoulos, Nick Frazier, Margaret McKeehan,
+%           and Mark Agerton at Rice University for template.
+%           Also, to Jason Blevins <jrblevin@sdf.lonestar.org> for 
+%           initial template at 
+%               http://jblevins.org/projects/cv-template/
+% THANKS TO Jacquie Frazier for helpful suggestions
+
+% ---------- Packages ------------
+
+\usepackage{geometry}                % for margins
+%\usepackage{tgpagella}               % font 
+\usepackage{titlesec}                % format section titles
+\usepackage{pbox}                    % boxes for diss. committee
+\usepackage{fancyhdr}                % header + footer
+\usepackage[yyyymmdd]{datetime}      % for date format at end
+\usepackage{tabularx}                % to get tables to fill width
+% \usepackage{showframe}               % uncomment to see margins
+\usepackage{xcolor}                  % to define the Rice Univ blue
+\usepackage{enumitem}                % Customize itemize environments
+\usepackage{soul}                    % Allows underlining
+
+\usepackage{hyperref}                % links for email + web
+
+% ---------------------------------------------------------
+% ----------             FORMATTING            ------------
+% ---------------------------------------------------------
+
+% format of section heading
+% see http://www.ctex.org/documents/packages/layout/titlesec.pdf
+\titleformat{\section}                       % command
+    [display]                                % shape
+    {\Large\scshape}                         % format
+    {}                                       % label
+    {0ex}                                    % sep
+    {\vspace{-4.0ex plus .2ex minus .2ex}}   % code preceding the title body
+    [\vspace{-2.8ex}\rule{\textwidth}{0.3pt}\vspace{-1.5ex}]  % code following the title body
+
+% margins
+\geometry{
+  body={6.5in, 9.0in},                       % adjust right + bottom here
+  left=1.0in,
+  top=1.0in
+}
+
+% formatting for all itemize
+\setlist[itemize]{ 
+        leftmargin  = 0.0em, 
+        itemsep     = 0.0em, 
+        topsep      = 0.0em,
+        label       = {},
+        parsep      = 0.5em
+}
+
+% formatting for second level of itemize
+\setlist[itemize,2]{
+        leftmargin  = 2.0em, 
+        itemsep     = 0.0em
+}
+
+% -------------- format header & footer ------------
+
+% get header + footer 
+\pagestyle{fancy}
+
+% suppress line drawn by default by fancyhdr
+\renewcommand{\headrulewidth}{0pt}
+
+% shows date compiled
+% \cfoot{(Updated: \mydate\today)}
+\cfoot{}
+
+% your name on the right
+\rhead{\emph{\myshortname, \  p. \thepage}}
+\lhead{}
+
+\fancypagestyle{laststyle}{
+   \fancyfoot[C]{(Updated \mydate\today)}
+}
+
+% ---------- Margins and other formatting ------------
+
+% space b/w paragraphs
+\setlength{\parskip}{1.1ex}
+
+% default to no indents
+\setlength\parindent{0pt}
+
+% format for date at the end
+\newdateformat{mydate}{\monthname[\THEMONTH] \THEDAY, \THEYEAR}
+
+% The Rice Univ Blue
+\definecolor{RiceBlue}{RGB}{0,82,147}
+
+% so that URLs are not monospace
+\urlstyle{same}
+
+% macro for email
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+
+% macro to force indent of a line
+\newcommand{\forceindent}{\leavevmode{\parindent=24pt\indent}}
+
+% ---------------------------------------------------------
+% -----------         YOUR INFORMATION          -----------
+% ---------------------------------------------------------
+
+\newcommand{\myname}{David Ricardo}
+\newcommand{\myshortname}{D. Ricardo}
+\newcommand{\myemail}{dricardo@rice.edu}
+\newcommand{\mywebsite}{http://www.my-great-website.com}
+\newcommand{\mywebsiteNoHttp}{www.my-great-website.com}
+\newcommand{\myphone}{(713) 348-8411}
+\newcommand{\myaddress}{
+Dept. of Economics MS-22 \\ 
+Rice University \\ 
+Houston, TX 77251}
+\newcommand{\mykeywords}{economics, econometrics, macroeconomics}
+
+
+% ---------------------------------------------------------
+% -----------    URL COLOR + PDF METADATA       -----------
+% ---------------------------------------------------------
+
+% URL and link colors
+\newcommand{\linkcolor}{RiceBlue}     % can change to black
+
+\hypersetup{
+            colorlinks  = true, 
+            linkcolor   = {\linkcolor},
+            filecolor   = {\linkcolor},
+            urlcolor    = {\linkcolor},
+            pdfauthor   = {\myname},
+            pdfkeywords = {\mykeywords},
+            pdfsubject  = {Curriculum Vitae},
+            pdftitle    = {\myname: Curriculum Vitae},
+            pdfpagemode = UseNone,
+}
+
+% ---------------------------------------------------------
+% ----------              RESUME               ------------
+% ---------------------------------------------------------
+
+\begin{document}
+
+% suppress header + footer on p. 1
+\thispagestyle{empty}
+
+% Name
+\begin{center}
+{\huge\scshape\myname}
+\end{center}
+
+\vspace{3em}
+
+% Contact info
+\begin{minipage}[t]{0.48\textwidth}
+    \href{\mywebsite}{\mywebsiteNoHttp} \\
+    \email{\myemail}  \\ 
+    \myphone 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{flushright}
+    \myaddress
+    \end{flushright}
+\end{minipage}
+
+
+% ----------------------------------------
+\section{Education}
+% ----------------------------------------
+
+\begin{itemize}[labelindent=-25pt,itemindent=-20pt,leftmargin=!]
+    \item Ph.D. in Economics, Rice University  \hfill (Anticipated) May 2018  \\
+    \textsc{Dissertation}: \emph{Three Essays in Labor Economics}
+
+    \item M.A. in Economics, Rice University  \hfill (Anticipated) May 2017 
+
+    \item B.A. in Economics (\emph{summa cum laude}), London School of Economics \hfill May 2000--03 
+\end{itemize}
+
+% ----------------------------------------
+\section{Dissertation Committee (pbox 1 row)}
+% ----------------------------------------
+
+\pbox{0.33\textwidth}{
+Prof. Kenneth Arrow (\textbf{Chair}) \\
+Department of Economics \\
+Rice University \\
+(713) 348-1111\\
+\href{mailto:arrow@rice.edu}{arrow@rice.edu}
+} %
+%
+\hfill
+%
+\pbox{0.33\textwidth}{
+Prof. Friedrich Hayek \\
+Department of Economics \\
+Rice University \\
+(713) 348-2222\\
+\href{mailto:hayek@rice.edu}{hayek@rice.edu}
+}%
+%
+\hfill
+%
+%
+\pbox{0.33\textwidth}{
+Prof. John Hicks \\
+Department of Economics\\
+Rice University \\
+(713) 348-3333 \\
+\href{mailto:hicks@rice.edu}{hicks@rice.edu}
+}
+
+% ----------------------------------------
+\section{Dissertation Committee (minpage 2-rows)}
+% ----------------------------------------
+
+
+\begin{minipage}{.5\textwidth}
+Prof. Kenneth Arrow (\textbf{Chair}) \\
+Department of Economics \\
+Rice University \\
+(713) 348-1111\\
+\href{mailto:arrow@rice.edu}{arrow@rice.edu}
+\end{minipage}%
+%
+%
+\begin{minipage}{0.5\textwidth}
+Prof. Friedrich Hayek \\
+Department of Economics \\
+Rice University \\
+(713) 348-2222\\
+\href{mailto:hayek@rice.edu}{hayek@rice.edu}
+\end{minipage}
+
+% CODE TO INSERT A \vspace EQUIVALENT of 
+%    "The normal vertical distance between lines in a paragraph."
+\vspace{1\baselineskip plus 10pt minus 10pt} 
+
+\begin{minipage}{0.5\textwidth}
+Prof. John Hicks \\
+Department of Economics\\
+Rice University \\
+(713) 348-3333 \\
+\href{mailto:hicks@rice.edu}{hicks@rice.edu}
+\end{minipage}
+
+% ----------------------------------------
+\section{Research Fields}
+% ----------------------------------------
+
+\begin{itemize}
+    \item Primary: Energy Economics
+    \item Secondary: Applied Econometrics
+\end{itemize}
+
+
+% ----------------------------------------
+\section{Academic Publications}
+% ----------------------------------------
+
+\begin{itemize}
+    \item ``Rising Cost of Yellow Submarines.'' (2000) \emph{Journal of Music Economics} 44(2), 337-58. \url{http://my-great-paper.com} (with J.M. Keynes and P. McCartney)
+\end{itemize}
+
+% ----------------------------------------
+\section{Research Papers}
+% ----------------------------------------
+
+\begin{itemize}[itemsep=1.5em]
+
+\item \emph{The General Theory of Employment, Interest and Money} \hfill \textbf{Job Market Paper}
+
+Phasellus nec eleifend arcu. Vivamus vulputate mi non erat consequat venenatis. Ut in suscipit elit. Aliquam tincidunt, risus quis fringilla dignissim, ipsum diam congue enim, eu iaculis sem sapien in nibh. Ut euismod ullamcorper quam quis blandit. Maecenas convallis, elit nec semper vulputate, justo mauris porttitor erat, non aliquam est velit sit amet ex. Cras bibendum felis cursus ligula consectetur posuere. Aenean vitae dignissim massa. Duis sodales felis ex, a lobortis lacus tempus non. Phasellus pretium ipsum non tincidunt egestas. Curabitur nec purus in arcu tempor vestibulum vulputate in erat. Cras vel ornare turpis. \href{http://my-great-site.com/files/somepaper.pdf}{Download}
+
+\item \emph{Notes on the Trade Cycle}
+\\ (\emph{Revise and Resubmit, \emph{Journal of Latin Cliches}}) with J.M. Keynes, LSE
+
+In ac odio at risus accumsan eleifend sed eget nunc. Suspendisse potenti. Integer at ligula efficitur, lobortis magna eget, condimentum purus. Nunc nec velit et ipsum gravida sagittis. Aenean cursus elit et lacus pellentesque, eget varius justo hendrerit. Donec at sapien et ipsum faucibus rutrum quis non ante. Ut facilisis nibh a tellus interdum sodales. Quisque elementum tellus at malesuada aliquet. Phasellus id mi in mauris ullamcorper semper. Sed et augue sed sem sodales mollis nec quis sem. Sed sit amet enim dolor. Vivamus vehicula ipsum vel felis venenatis fringilla. Morbi condimentum orci ipsum, eget interdum ligula volutpat vel. Integer ullamcorper malesuada risus, sed eleifend nulla volutpat et. \href{http://my-great-site.com/files/somepaper.pdf}{Available on SSRN}
+
+\end{itemize}
+
+% ----------------------------------------
+\section{Scholarships, Honors, and Awards}
+% ----------------------------------------
+
+\begin{itemize}   
+    \item Best Working Paper, Department of Economics, London School of Economics \hfill 2017
+\end{itemize}
+
+% ----------------------------------------
+% \vspace*{-1.2cm}  % put above section title if at top of pg
+\section{Teaching Fields}
+% ----------------------------------------
+
+Microeconomics, macroeconomics
+
+
+% ----------------------------------------
+\section{Teaching Experience}
+% ----------------------------------------
+
+\begin{itemize}[itemsep=0.5em]
+    
+    \item \textbf{Teaching Assistant}, Rice University 
+    \begin{itemize}
+        \item Graduate: Labor Economics \hfill Fall 2012-Present 
+        \item Undergraduate: Labor Economics \hfill Fall 2010-Fall 2012
+    \end{itemize}
+    
+    \item \textbf{Instructor}, Rice University
+    \begin{itemize}
+        \item Undergradeuate: ``econ 4 dummies: a primer''  \hfill Fall 2013
+    \end{itemize}
+
+\end{itemize}
+
+
+% ----------------------------------------
+\section{Professional Activities}
+% ----------------------------------------
+
+\begin{itemize}[itemsep=0.75em]
+
+        \item \textbf{Conferences}
+    \begin{itemize}
+        \item ``Sports in the Age Sports," XXIII Conference on Sport Economics, Olympia, Greece \hfill 2008
+        \item ``Sports in the Age Sports," XXIV Conference on Sport Economics, Olympia, Greece \hfill 2009
+    \end{itemize}
+
+    \item \textbf{Referee for} Journal of Obligatory Economics, Review of Useless Economics
+    
+    \item \textbf{Association of Useless Facts}
+    \begin{itemize}
+        \item President, Rice Univ Chapter \hfill 2010--2012
+        \item Student representative, National chapter \hfill 2013
+    \end{itemize}
+    
+    \item \textbf{Invited presentations}
+    \begin{itemize}
+        \item Luna University, The moon, ``Economics of space travel'' \hfill Sept 2013
+        \item Extraterrestris institute, Alpha Centauri, ``Are we really all dead in the long run?'' \hfill Jan 2101
+    \end{itemize}
+
+\end{itemize}
+
+% ----------------------------------------
+\section{Other Writing and Media Appearances}
+% ----------------------------------------
+
+\begin{itemize}[itemsep=0.5em]
+    \item Quoted on Planet Money, ``\href{https://www.marketplace.org/2017/05/26}{Will work for money: A conversation with David Ricardo}'' (May 26, 2017)
+\end{itemize}
+
+% ----------------------------------------
+\section{Other}
+% ----------------------------------------
+
+\begin{itemize}[itemsep=0.5em]
+    \item Fluent in Greek
+    \item Software: R, Julia, Stata, MATLAB, Python, SQL, ArcGIS, \LaTeX
+    \item Hobbies: cooking, fly fishing
+    \item Prior professional experience: Central Banking
+    \item British citizen
+\end{itemize}
+
+
+% Ensures "updated" date comes at the end
+\thispagestyle{laststyle}
+
+\end{document}

@@ -1,10 +1,33 @@
 # CV Templates
 
+## Thanks to
+
+Thanks to Ioannis Spyridopoulos, Nick Frazier, Margaret McKeehan, and Mark Agerton at Rice University for contributions to template.
+
+Original template from Jason Blevins <http://jblevins.org/projects/cv-template/>
+
+Thanks to Jacquie Frazier for helpful suggestions
+
 ## For consideration...
-    * Conference presentations sub-section?
-    * Work experience?
+
+- Conference presentations sub-section?
+- Work experience?
 
 ## Version history
+
+- [CV Template 2.2.tex](CV Template 2.2.pdf)
+    * Fix `\section` spacing so that sections on new pages don't have extra space on top
+    * Add underlining possibilities with `soul` package
+    * Separated Research and Teaching sections
+    * Add scholarship, honors, awards section
+    * Add other writing and media section
+    * Updated date using `fancyhdr` package
+
+- [CV Template 2.1.tex](CV Template 2.1.pdf)
+    * Use regular LaTeX font, not tgpagella
+    * Update spacing on section titles
+    * Updated date only on last page
+    * Show 1 vs 2 row dissertation commmittee
 
 - [CV Template 2.0.tex](CV Template 2.0.pdf)
     * Updated with new look after Ioannis Spyridopoulos resume
@@ -45,3 +68,5 @@
     * If you know how to make the heading actually right adjusted (i.e., ending at the same margin as the rest of the document), that'd be extra awesome.
 
 - [CV Template-rev0.tex](older versions/CV Template-rev0.pdf) and [CV_Template.doc](older versions/CV_Template.doc) are initial drafts
+
+
